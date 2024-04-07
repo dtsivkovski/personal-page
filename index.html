@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daniel Tsivkovski</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Daniel Tsivkovski's personal website">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/toggle.css">
+    <link rel="stylesheet" href="assets/specialbutton.css">
+    <script src="assets/specialbutton.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    >
+    <script src="https://kit.fontawesome.com/b33dd8950a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(255, 249, 237);
+      }
+      html {
+        scroll-behavior: smooth;
+        background-color: rgb(255, 249, 237);
+      }
+    </style>
+</head>
+<body>
+  <!-- Main page -->
+  <div class="container is-flex is-justify-content-center is-align-items-center">
+    <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover hover-main">
+      <div class="hero-body hero-adapt">
+        <div class="container">
+            <h1 class="title has-text-dark has-text-centered font-georgia" id="followTitle">Daniel Tsivkovski</h1>
+        </div>
+        <div class="columns mt-4">
+          <div class="column is-flex is-justify-content-center is-align-items-center">
+            <button class="special-btn icon-btn" onclick='sp_onclick("https://www.linkedin.com/in/danieltsivkovski/", this)'> 
+              <p><i class="fa-brands fa-linkedin-in"></i></p>
+            </button>
+            <button class="special-btn icon-btn" onclick="sp_onclick('https://github.com/dtsivkovski', this)"> 
+              <p><i class="fa-brands fa-github"></i></p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</body>
+</html>
