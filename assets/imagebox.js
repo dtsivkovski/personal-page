@@ -10,14 +10,17 @@ const imageArray = ["assets/images/main_headshot.jpeg", "assets/images/luna1.jpg
 
 var image_state = 1;
 var isExpanded = false;
-var audio = new Audio("assets/sounds/camera-shutter.mp3");
+const shutter = new Audio("assets/sounds/camera-shutter.mp3");
+const wind = new Audio("assets/sounds/wind-whoosh.mp3");
+wind.volume = 1.25;
+
 
 function imageState() {
     if (image_state > imageArray.length - 1) {
         image_state = 0;
     }
     setTimeout(function() {
-        audio.play();
+        shutter.play();
     }, 50);
     imagebox.classList.add("imagebox-shutter");
     setTimeout(function() {
@@ -33,6 +36,7 @@ function ib_onclick() {
     if (!isExpanded) {
         imagebox.classList.add("imagebox-expanded");
         isExpanded = true;
+        wind.play();
     }
     else {
         imageState();
