@@ -12,7 +12,8 @@ var image_state = 1;
 var isExpanded = false;
 const shutter = new Audio("assets/sounds/camera-shutter.mp3");
 const wind = new Audio("assets/sounds/wind-whoosh.mp3");
-wind.volume = 1.25;
+wind.volume = 1.0;
+shutter.volume = 0.5;
 
 // load all images ahead of time
 imageArray.forEach(function(image) {
