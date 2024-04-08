@@ -14,6 +14,12 @@ const shutter = new Audio("assets/sounds/camera-shutter.mp3");
 const wind = new Audio("assets/sounds/wind-whoosh.mp3");
 wind.volume = 1.25;
 
+// load all images ahead of time
+imageArray.forEach(function(image) {
+    var img = new Image();
+    img.src = image;
+});
+
 
 function imageState() {
     if (image_state > imageArray.length - 1) {
