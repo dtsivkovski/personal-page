@@ -10,11 +10,15 @@ const imageArray = ["assets/images/main_headshot.jpeg", "assets/images/luna1.jpg
 
 var image_state = 1;
 var isExpanded = false;
+var audio = new Audio("assets/sounds/camera-shutter.mp3");
 
 function imageState() {
     if (image_state > imageArray.length - 1) {
         image_state = 0;
     }
+    setTimeout(function() {
+        audio.play();
+    }, 50);
     imagebox.classList.add("imagebox-shutter");
     setTimeout(function() {
         imageChild.src = imageArray[image_state++];
