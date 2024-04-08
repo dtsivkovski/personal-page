@@ -2,12 +2,11 @@
 <html>
 <head>
     <title>Daniel Tsivkovski</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/icon">
+    <link rel="icon" href="assets/icon/favicon.ico" type="image/icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Daniel Tsivkovski's personal website">
     <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/toggle.css">
     <link rel="stylesheet" href="assets/specialbutton.css">
     <script src="assets/specialbutton.js"></script>
     <link
@@ -18,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
       body {
-        background-color: rgb(255, 249, 237);
+        background-color: hsl(40, 100%, 96%);
       }
       html {
         scroll-behavior: smooth;
@@ -31,9 +30,10 @@
   <div class="container is-flex is-justify-content-center is-align-items-center">
     <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover hover-main">
       <div class="hero-body hero-adapt">
-        <div class="container">
+        <div class="container" id="followTitleContainer">
             <h1 class="title has-text-dark has-text-centered font-georgia" id="followTitle">Daniel Tsivkovski</h1>
         </div>
+        <script src="assets/followtitle.js"></script>
         <div class="columns mt-4">
           <div class="column is-flex is-justify-content-center is-align-items-center">
             <button class="special-btn icon-btn" onclick='sp_onclick("https://www.linkedin.com/in/danieltsivkovski/", this)'> 
@@ -41,6 +41,9 @@
             </button>
             <button class="special-btn icon-btn" onclick="sp_onclick('https://github.com/dtsivkovski', this)"> 
               <p><i class="fa-brands fa-github"></i></p>
+            </button>
+            <button class="special-btn icon-btn" onclick="sp_onclick('https://www.bing.com/ck/a?!&&p=2bf391caa5873e35JmltdHM9MTcxMjQ0ODAwMCZpZ3VpZD0xZWUzNGQ1ZC1lNDZjLTZjMGUtMDNiNC01ZWRhZTU0MTZkYmMmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=1ee34d5d-e46c-6c0e-03b4-5edae5416dbc&psq=dtsivkovski+instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9kdHNpdmtvdnNraS8&ntb=1', this)"> 
+              <p><i class="fa-brands fa-instagram"></i></p>
             </button>
           </div>
         </div>

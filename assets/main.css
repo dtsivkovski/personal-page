@@ -75,3 +75,17 @@ body {
 .textarea:focus {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.353);
 }
+
+#followTitle {
+    cursor: default;
+    transition: transform 0.05s ease;
+}
+
+.follow-title-active {
+    position: absolute;
+    white-space: nowrap;
+}
+
+.hidden {
+    visibility: hidden;
+}
