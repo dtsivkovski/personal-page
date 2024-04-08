@@ -74,8 +74,9 @@ body {
 }
 
 #followTitle {
-    cursor: default;
+    cursor: pointer;
     transition: transform 0.05s ease;
+    
 }
 
 .follow-title-active {
