@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/specialbutton.css">
     <link rel="stylesheet" href="assets/imagebox.css">
+    <link rel="stylesheet" href="assets/project-cards.css">
     <script src="assets/specialbutton.js"></script>
     <link
         rel="stylesheet"
@@ -41,8 +42,18 @@
             <h1 class="title has-text-dark has-text-centered font-georgia" id="followTitle">Daniel Tsivkovski</h1>
         </div>
         <script src="assets/followtitle.js"></script>
-        <div id="socialbuttons">
-        <div class="columns mt-4">
+        <div id="categories">
+          <div class="column is-flex is-justify-content-center is-align-items-center">
+            <button class="special-btn btn-sm-w category-btn-selected" title="Contact" id="contacts-button" onclick="enableContacts()">
+              <p>Contact</p>
+            </button>
+            <button class="special-btn btn-sm-w" title="Projects" id="projects-button" onclick="enableProjects()">
+              <p>Projects</p>
+            </button>
+          </div>
+        </div>
+        <div id="contactbuttons" class="">
+        <div class="columns mt-3">
           <div class="column is-flex is-justify-content-center is-align-items-center">
             <button class="special-btn icon-btn" title="LinkedIn" onclick='sp_onclick("https://www.linkedin.com/in/danieltsivkovski/", this)'> 
               <p><i class="fa-brands fa-linkedin-in"></i></p>
@@ -56,8 +67,12 @@
           </div>
         </div>
         </div>
+        <div id="projects" class="">
+          Projects
+        </div>
       </div>
     </div> 
   </div>
+  <script src="assets/categories.js"></script>
 </body>
 </html>

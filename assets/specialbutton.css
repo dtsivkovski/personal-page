@@ -19,17 +19,6 @@
     height: 5em;
 }
 
-@media screen and (max-width: 768px) {
-    .special-btn {
-        height: 2em;
-        width: 10em;
-    }
-    .icon-btn {
-        width: 2em;
-        height: 2em;
-    }
-}
-
 .special-btn p {
     font-size: 34px;
     text-align: center;
@@ -39,12 +28,11 @@
     text-shadow: 1px 1px 5px #ccd0d4, 0 0 0 rgba(0, 0, 0, 0.8), 1px 1px 4px #fff;
 }
 
-.special-btn:hover {
+.special-btn:hover, .category-btn-selected {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4), inset 0 -8px 30px 1px rgba(238, 238, 238, 0.427), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px 1px rgba(178, 178, 178, 0.6); 
-
 }
 
-.special-btn:hover p {
+.special-btn:hover p{
     font-size: 32px;
 }
 
@@ -58,5 +46,36 @@
         transform: scale(1);
     }
     100% {transform: scale(0.0001);
+    }
+}
+
+.btn-sm-w {
+    width: 8em;
+    height: 3em;
+}
+
+.btn-sm-w p {
+    font-size: 20px;
+}
+
+.btn-sm-w:hover p {
+    font-size: 19px;
+}
+.category-btn-selected:hover p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .special-btn {
+        height: 2em;
+        width: 10em;
+    }
+    .icon-btn {
+        width: 2em;
+        height: 2em;
+    }
+    .btn-sm-w {
+        width: 3em;
+        height: 1em;
     }
 }
