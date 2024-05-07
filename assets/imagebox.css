@@ -13,7 +13,7 @@
     cursor: zoom-in;
     /* animation: pulse 2.5s ease-in-out infinite; */
     animation: shake 3s ease-in-out infinite;
-    animation-delay: 2s; 
+    animation-delay: 1s; 
 }
 
 .imagebox img {
@@ -70,6 +70,7 @@
     width: 20em;
     height: 20em;
     cursor: help;
+    animation: none;
     /* animation: pulse 2.5s ease-in-out infinite; */
     /* animation: shake 3s ease-in-out infinite;
     animation-delay: 2s; */
