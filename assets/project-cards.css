@@ -119,4 +119,8 @@ pcard-header {
         flex-wrap: wrap;
         width: 18em;
     }
+
+    pcard thumbnail {
+        margin-bottom: 0;
+    }
 }
