@@ -1,6 +1,7 @@
 // title that will follow the user's mouse onclick with absolute positioning
 // when clicked again, the title will return to relative positioning and won't follow the mouse
 function ft_onclick(e) {
+    if (mobileAndTablet) return;
     // get the title element
     var title = document.querySelector("#followTitle");
     var titleContainer = document.querySelector("#followTitleContainer");

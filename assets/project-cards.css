@@ -1,0 +1,133 @@
+pcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1em;
+    border-radius: 2em;
+    background: rgb(255, 249, 237);
+    position: relative;
+    width: 40em;
+    box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    align-items: center;
+}
+
+
+pcard thumbnail img {
+    width: 100%;
+    border-radius: 1em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+pcard thumbnail:hover img {
+    filter: grayscale(80%);
+    transform: scale(0.95);
+}
+
+pcard thumbnail {
+    display: flex;
+    margin: 1em;
+    min-width: 16em;
+    max-width: 16em;
+    width: 16em;
+    justify-content: center;
+}
+
+
+pcard pcard-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    justify-content: left;
+    align-items: center;
+}
+
+pcard project-title {
+    color: rgb(70, 70, 70);
+    font-size: 32px;
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+
+pcard project-description {
+    color: rgb(101, 101, 101);
+}
+
+pcard-body skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 0.25em;
+}
+
+skills skill {
+    background: rgb(222, 244, 255);
+    box-shadow: 0 10px 10px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    height: 2em;
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 0.25em;
+    margin-top: 0.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    color: rgb(101,101,101);
+    z-index: 5;
+}
+
+skills skill:hover {
+    transform: translate(0px, -5px);
+    z-index: 5;
+}
+
+project-label {
+    box-shadow: 0 10px 10px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    padding: 0.25em;
+    border-radius: 0.5em;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    margin-top: 0;
+    cursor: pointer;
+    z-index: 5;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+project-label:hover {
+    transform: translate(0px, -5px);
+    z-index: 5;
+}
+
+project-label.complete {
+    background-color: #63de67;
+    color: rgb(43, 43, 43);
+}
+
+project-label.in-progress {
+    background-color: #e2b63e;
+    color: rgb(43, 43, 43);
+}
+
+pcard-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    pcard {
+        font-size: 20px;
+        flex-wrap: wrap;
+        width: 18em;
+    }
+
+    pcard thumbnail {
+        margin-bottom: 0;
+    }
+}
