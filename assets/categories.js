@@ -54,4 +54,4 @@ function enableProjects() {
 
 }
 
-enableProjects();
+enableContacts();
