@@ -13,10 +13,19 @@ pcard {
 }
 
 
+
+
 pcard thumbnail img {
     width: 100%;
     height: 100%;
     border-radius: 1em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+pcard thumbnail:hover img {
+    filter: grayscale(80%);
+    transform: scale(0.95);
 }
 
 pcard thumbnail {
@@ -26,6 +35,7 @@ pcard thumbnail {
     max-width: 16em;
     justify-content: center;
 }
+
 
 pcard pcard-body {
     display: flex;
@@ -76,4 +86,13 @@ skills skill {
 skills skill:hover {
     transform: translate(0px, -5px);
     z-index: 5;
+}
+
+
+@media screen and (max-width: 768px) {
+    pcard {
+        font-size: 20px;
+        flex-wrap: wrap;
+        width: 18em;
+    }
 }
