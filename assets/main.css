@@ -48,6 +48,9 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media screen and (max-width: 768px) {
+    .hero-adapt {
+        max-width: 390px;
+    }
 }
 
 .textarea {
